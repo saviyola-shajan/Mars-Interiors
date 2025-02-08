@@ -1,15 +1,16 @@
-import './App.css'
-import Header from './Components/Header'
+import "./App.css";
+import Header from "./Components/Header";
+import Home from "./Pages/Home";
 
 function App() {
-
   return (
     <>
-    <div>
-<Header/>
-    </div>
+      <div className="min-h-screen w-full">
+        <Header />
+        <Home />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
