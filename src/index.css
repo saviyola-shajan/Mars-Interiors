@@ -5,7 +5,7 @@
 #root,
 body,
 html {
-  background-color: white;
+  background-color: #FFFFFF;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch !important;
   width: 100% !important;

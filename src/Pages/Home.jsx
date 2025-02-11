@@ -1,16 +1,16 @@
 import AboutSection from "../Components/AboutSection"
-import Footer from "../Components/Footer"
 import HeroSection from "../Components/HeroSection"
 import ServicesSection from "../Components/ServicesSection"
 import GallerySection from "../Components/GallerySection"
+import CategoriesSection from "../Components/CategoriesSection"
 
 const Home=()=> {
   return (
     <div><HeroSection/>
-    <AboutSection/>
+    <CategoriesSection/>
     <ServicesSection/>
+    <AboutSection/>
     <GallerySection/>
-    <Footer/>
     </div>
   )
 }

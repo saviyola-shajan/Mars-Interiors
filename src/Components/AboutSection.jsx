@@ -1,9 +1,9 @@
 const AboutSection = () => {
   return (
-    <div className="min-h-screen p-24">
+    <div className="min-h-screen px-24 pt-24">
+        <h2 className="text-6xl font-medium text-[#17A396] pt-20 text-center">ABOUT</h2>
       <div className="text-[#121212] w-1/2 text-left items-center ">
-        <h2 className="text-6xl font-medium text-[#17A396] pt-20">ABOUT</h2>
-        <p className="text-2xl font-normal mt-10 text-[#121212] pt-10 px-10 leading-normal">
+        <p className="text-2xl font-normal mt-10 text-[#121212] pt-10 px-12 leading-normal">
           At <span className="font-semibold text-[#17A396]">MARS INTERIORS</span>, we are passionate about creating spaces that
           inspire, uplift, and reflect the unique personality of each client. As
           a full-service interior design company, we blend creativity with
