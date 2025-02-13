@@ -14,7 +14,7 @@ const Gallery = () => {
   return (
     <div className="min-h-screen p-24">
       <div className="text-center mb-16">
-        <h2 className="text-6xl font-medium text-[#17A396]">GALLERY</h2>
+        <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent">Gallery</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {images.map((image, index) => (

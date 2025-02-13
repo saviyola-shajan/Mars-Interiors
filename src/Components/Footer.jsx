@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-40 text-left">
         <div className="space-y-6">
           <h3 className="text-[#000000] text-2xl font-medium">Location</h3>
-          <p className="flex items-start text-lg text-[#121212] space-x-3">
+          <p className="flex items-start text-lg text-[#0B0B0B] space-x-3">
             <FaLocationDot className="mt-1" />
             <span>15th Floor, Muthoot Royal Towers Building, Kaloor, Kochi, Kerala 682017</span>
           </p>
@@ -19,7 +19,7 @@ const Footer = () => {
 
         <div className="space-y-6">
           <h3 className="text-[#000000] text-2xl font-medium">Quick Links</h3>
-          <ul className="space-y-3 text-lg text-[#121212]">
+          <ul className="space-y-3 text-lg text-[#0B0B0B]">
             <li><a href="/" className="hover:underline">Home</a></li>
             <li><a href="/aboutus" className="hover:underline">About Us</a></li>
             <li><a href="/services" className="hover:underline">Services</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
 
         <div className="space-y-6">
           <h3 className="text-[#000000] text-2xl font-medium">Contact</h3>
-          <ul className="space-y-3 text-lg text-[#121212]">
+          <ul className="space-y-3 text-lg text-[#0B0B0B]">
             <li className="flex items-center space-x-3">
               <IoIosMail />
               <a href="mailto:info@ipcstechnologies.com">info@marsinterios.com</a>
@@ -51,7 +51,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className="border-t border-gray-700 mt-10 pt-10 text-[#121212] text-center text-md ">
+      <div className="border-t border-gray-700 mt-10 pt-10 text-[#0B0B0B] text-center text-md ">
         <p>© 2025 MARS Interiors &nbsp;| &nbsp;All Rights Reserved</p>
         <p className="text-sm">
           <a href="/privacy-policy" className="hover:underline">Privacy Policy</a> &nbsp;|&nbsp;
