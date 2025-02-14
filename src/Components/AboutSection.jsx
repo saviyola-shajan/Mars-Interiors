@@ -1,4 +1,4 @@
-import image from "/public/images/slide 1.jpg";
+import image from "/images/slide 1.jpg";
 
 const AboutSection = () => {
   return (

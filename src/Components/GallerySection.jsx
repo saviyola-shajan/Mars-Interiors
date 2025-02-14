@@ -12,7 +12,7 @@ const images = [
 
 const Gallery = () => {
   return (
-    <div className="min-h-screen p-24">
+    <div className="min-h-screen px-24 pb-20">
       <div className="text-center mb-16">
         <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent">Gallery</h2>
       </div>

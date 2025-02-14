@@ -77,13 +77,13 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="py-16 bg-black/10 rounded-lg">
+        <div className="py-16 bg-black/5 rounded-lg">
           <h2 className="text-center text-4xl font-bold bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent mb-16">
             Why Choose Us?
           </h2>
-          <ul className="max-w-6xl mx-32 text-lg text-gray-700 space-y-12">
+          <ul className="max-w-6xl mx-32 text-lg text-[#0B0B0B] space-y-12 list-disc list-inside">
             <li>
-              <span className="font-semibold text-4xl text-[#17A396] ">
+              <span className="font-semibold text-4xl  text-[#17A396]">
                 Expert Team:&nbsp;
               </span>{" "}
               A blend of seasoned designers and fresh talent brings diverse
