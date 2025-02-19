@@ -1,6 +1,6 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
-
+import { FaWhatsapp } from "react-icons/fa";
 const Contact = () => {
   // Formik Configuration
   const formik = useFormik({
@@ -35,21 +35,26 @@ const Contact = () => {
     <div className="min-h-screen w-full flex flex-col md:flex-row items-center justify-center px-24 pt-32 pb-24">
       {/* Left Side - Contact Information */}
       <div className="w-full md:w-1/2 p-8">
-        <h2 className="text-4xl font-semibold bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent mb-4">Get in Touch</h2>
+        <h2 className="text-4xl font-semibold bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mb-4">Get in Touch</h2>
         <p className="text-[#0B0B0B] text-lg mb-6 pr-20">
           Have questions or need assistance? Reach out to us, and we&apos;ll be happy to help!
         </p>
         <div className="space-y-4">
-          <p className="text-[#0B0B0B]">📍 <span className="font-semibold">Address:</span> 123, Design Street, Your City, India</p>
-          <p className="text-[#0B0B0B]">📞 <span className="font-semibold">Phone:</span> +91 98765 43210</p>
-          <p className="text-[#0B0B0B]">✉️ <span className="font-semibold">Email:</span> info@marsinteriors.com</p>
+          <p className="text-[#0B0B0B]">📍 <span className="font-semibold">Address:</span>Mars interiors, 24/7 global spaces, Peters Nine,<br/>Near Josco Jewellers,Thodupuzha,Kerala<br/> PinCode:685584</p>
+          <p className="text-[#0B0B0B]">📞 <span className="font-semibold">Phone:</span><a href="tel:+919562978418" target="_blank" >+91 9567876460</a> </p>
+          <p className="text-[#0B0B0B] flex"> <FaWhatsapp className="text-green-500 mt-1"/> <span className="font-semibold ml-2">Whatsapp:</span><a href="https://wa.me/9567876460" target="_blank" >+91 9567876460</a> </p>
+          <p className="text-[#0B0B0B]">✉️ <span className="font-semibold">Email:</span><a href="mailto:info@ipcstechnologies.com" target="_blank">info@marsinteriors.com</a> </p>
           <p className="text-[#0B0B0B]">⏰ <span className="font-semibold">Working Hours:</span> Mon - Sat, 10:00 AM - 7:00 PM</p>
+          <h2 className="font-semibold text-xl pt-10">Mananging Directors</h2>
+          <p className="text-[#0B0B0B] "> Marcel Mathew</p>
+          <p className="text-[#0B0B0B]">Jisna Marcel</p>
+
         </div>
       </div>
 
       {/* Right Side - Contact Form with Formik */}
       <div className="w-full md:w-1/2 bg-white shadow-lg rounded-2xl p-8">
-        <h2 className="text-3xl font-semibold bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent mb-6 text-center">Send Us a Message</h2>
+        <h2 className="text-3xl font-semibold bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mb-6 text-center">Send Us a Message</h2>
         <form onSubmit={formik.handleSubmit} className="space-y-4">
           {/* Name Field */}
           <div>

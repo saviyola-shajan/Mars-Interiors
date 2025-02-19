@@ -3,7 +3,7 @@ import image from "/images/slide 1.jpg";
 const AboutSection = () => {
   return (
     <div className="min-h-screen px-24 pt-24 flex flex-col items-center mt-10">
-      <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent text-center mb-10">
+      <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center mb-10">
         About Us
       </h2>
       <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-6xl">

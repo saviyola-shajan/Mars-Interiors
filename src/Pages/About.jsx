@@ -65,9 +65,9 @@ const About = () => {
                 experiences. We aspire to set new standards in the industry by
                 transforming spaces with creativity, functionality, and
                 sustainability. Through a commitment to excellence and a deep
-                understanding of our clients&apos; needs. Our goal is to be the go-to choice for those
-                seeking extraordinary design solutions that blend elegance,
-                comfort, and practicality.
+                understanding of our clients&apos; needs. Our goal is to be the
+                go-to choice for those seeking extraordinary design solutions
+                that blend elegance, comfort, and practicality.
               </p>
             </div>
             <img
@@ -77,58 +77,63 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="py-16 bg-black/5 rounded-lg">
-          <h2 className="text-center text-4xl font-bold bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent mb-16">
+        <div className="py-16 bg-black/5 rounded-lg mb-16">
+          <h2 className="text-center text-4xl font-bold bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mb-16">
             Why Choose Us?
           </h2>
-          <ul className="max-w-6xl mx-32 text-lg text-[#0B0B0B] space-y-12 list-disc list-inside">
-            <li>
-              <span className="font-semibold text-4xl  text-[#17A396]">
-                Expert Team:&nbsp;
-              </span>{" "}
-              A blend of seasoned designers and fresh talent brings diverse
-              perspectives to every project.
-              <div className="border-t border-gray-700 mt-4 text-[#FFFFFF] text-center text-lg font-200 leading-normal"></div>
-            </li>
-            <li>
-              <span className="font-semibold text-4xl text-[#17A396] ">
-                Client-Centric Approach:&nbsp;
-              </span>{" "}
-              We listen, collaborate, and prioritize your preferences at every
-              step.
-              <div className="border-t border-gray-700 mt-4 text-[#FFFFFF] text-center text-lg font-200 leading-normal"></div>
-
-            </li>
-            <li>
-              <span className="font-semibold text-4xl text-[#17A396] ">
-                Attention to Detail:&nbsp;
-              </span>{" "}
-              Meticulous planning and execution to ensure every element is
+          <div className="max-w-5xl mx-auto grid grid-cols-2 gap-16 text-lg text-[#0B0B0B]">
+            <div className="flex items-start space-x-6">
+              <span className="font-semibold text-5xl text-[#0B0B0BCC]">01</span>
+              <div>
+                <h3 className="font-semibold text-2xl text-[#17A396]">
+                Expert Team
+                </h3>
+                <p className="mt-2">
+                A blend of seasoned designers and fresh talent brings diverse
+                perspectives to every project.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <span className="font-semibold text-5xl text-[#0B0B0BCC]">02</span>
+              <div>
+                <h3 className="font-semibold text-2xl text-[#17A396]">
+                Client-Centric Approach
+                </h3>
+                <p className="mt-2 ">
+                We listen, collaborate, and prioritize your preferences at every
+                step.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <span className="font-semibold text-5xl text-[#0B0B0BCC]">03</span>
+              <div>
+                <h3 className="font-semibold text-2xl text-[#17A396]">
+                Attention to Detail
+                </h3>
+                <p className="mt-2">
+                Meticulous planning and execution to ensure every element is
               perfect.
-              <div className="border-t border-gray-700 mt-4 text-[#FFFFFF] text-center text-lg font-200 leading-normal"></div>
-
-            </li>
-            <li>
-              <span className="font-semibold text-4xl text-[#17A396] ">
-                Sustainable Practices:&nbsp;
-              </span>{" "}
-              Eco-conscious designs for a greener future.
-              <div className="border-t border-gray-700 mt-4 text-[#FFFFFF] text-center text-lg font-200 leading-normal"></div>
-
-            </li>
-            <li>
-              <span className="font-semibold text-4xl text-[#17A396] ">
-                Project Management:&nbsp;
-              </span>{" "}
-              End-to-end solutions for seamless execution of your design
-              projects.
-              <div className="border-t border-gray-700 mt-4 text-[#FFFFFF] text-center text-lg font-200 leading-normal"></div>
-
-            </li>
-          </ul>
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <span className="font-semibold text-5xl text-[#0B0B0BCC]">04</span>
+              <div>
+                <h3 className="font-semibold text-2xl text-[#17A396]">
+                Sustainable Practices
+                </h3>
+                <p className="mt-2">
+                End-to-end solutions for seamless execution of your design
+                projects.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
-          <h2>Testimonials</h2>
+          <h2 className="text-2xl">Testimonials</h2>
         </div>
       </div>
     </div>

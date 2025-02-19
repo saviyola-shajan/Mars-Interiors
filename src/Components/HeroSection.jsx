@@ -32,7 +32,7 @@ const HeroSection = () => {
               className="w-full h-screen object-cover "
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <h2 className="bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent text-5xl font-medium mt-96">
+              <h2 className="bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-5xl font-medium mt-96">
                 {slide.text}
               </h2>
             </div>

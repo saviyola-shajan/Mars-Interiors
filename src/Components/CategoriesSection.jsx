@@ -5,7 +5,7 @@ import image3 from "/images/slide4.jpg";
 const CategoriesSection = () => {
   return (
     <div className="min-h-screen flex flex-col items-center gap-12 pb-10">
-        <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent text-center py-12">Packages</h2>
+        <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center py-12">Packages</h2>
       <div className="flex flex-col md:flex-row items-center w-full max-w-5xl bg-white shadow-lg rounded-2xl p-6">
         <div className="md:w-1/2 text-left p-6">
           <h3 className="text-3xl font-semibold text-[#17A396]">Standard</h3>

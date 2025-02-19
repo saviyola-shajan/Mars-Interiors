@@ -6,7 +6,7 @@ import image5 from "/vectors/roof-lamp.png"
 const ServicesSection = () => {
   return (
     <div className="min-h-screen px-24 pt-24">
-      <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#F5BD02] bg-clip-text text-transparent mb-16 text-center">
+      <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mb-16 text-center">
         Our Services
       </h2>
 
