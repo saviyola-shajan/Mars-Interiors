@@ -34,8 +34,9 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full p-20">
+    <div className="min-h-screen w-full p-20 mb-40">
       <img src={image1} alt="service img" />
+        <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mt-10 text-center ">Services</h2>
       {services.map((service, index) => (
         <div
           key={index}
@@ -63,9 +64,26 @@ const Services = () => {
           </div>
         </div>
       ))}
-      <div>
-
-      <h2 className="text-3xl">Project Managment</h2>
+      <h2 className="text-4xl font-bold bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center mb-8">
+        Project Management
+      </h2>
+      <div className="relative">
+        <div className="absolute inset-0 w-full h-full z-0">
+          <img
+            src={image5}
+            alt="Project Management"
+            className="w-full h-[80vh] object-cover"
+          />
+        </div>
+        <div className="relative z-10 flex justify-end mb-40 p-10">
+          <div className="lg:w-1/2 bg-white p-6 rounded-lg shadow-lg">
+            <p className="text-lg text-gray-700">
+              Efficient project management is key to delivering successful
+              projects on time and within budget. Our team uses the latest tools
+              and methodologies to ensure your project runs smoothly.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

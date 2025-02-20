@@ -20,7 +20,7 @@ const HeroSection = () => {
         spaceBetween={30}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         modules={[Pagination, Autoplay]}
       >

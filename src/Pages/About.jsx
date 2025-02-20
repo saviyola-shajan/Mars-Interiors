@@ -33,8 +33,8 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-20 p-24 mb-10">
           <div className="flex flex-col md:flex-row items-center gap-10">
-            <div className="bg-white rounded-2xl w-full md:w-1/2 text-center">
-              <h2 className="text-5xl font-semibold mb-6 text-[#17A396]">
+            <div className="bg-white rounded-2xl w-full md:w-1/2">
+              <h2 className="text-5xl font-semibold mb-6 text-[#17A396] text-left">
                 MISSION
               </h2>
               <p className="text-[#0B0B0B] text-lg font-medium text-left">
@@ -55,8 +55,8 @@ const About = () => {
             />
           </div>
           <div className="flex flex-col md:flex-row-reverse items-center gap-10">
-            <div className="bg-white rounded-2xl w-full md:w-1/2 text-center">
-              <h2 className="text-5xl font-semibold mb-6 text-[#17A396]">
+            <div className="bg-white rounded-2xl w-full md:w-1/2">
+              <h2 className="text-5xl font-semibold mb-6 text-[#17A396] text-left">
                 VISION
               </h2>
               <p className="text-[#0B0B0B] text-lg font-medium text-left">
@@ -132,9 +132,9 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div>
+        {/* <div>
           <h2 className="text-2xl">Testimonials</h2>
-        </div>
+        </div> */}
       </div>
     </div>
   );
