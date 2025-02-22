@@ -12,7 +12,7 @@ const CategoriesSection = () => {
           <p className="text-[#0B0B0B] mt-2">
           An affordable yet stylish solution, designed for comfort and practicality without compromising on quality.
           </p>
-          <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">Starts at</span> ₹3.75 Lakhs</p>
+          <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">2 bhk Starts at</span> ₹3.75 Lakhs</p>
         </div>
         <div className="md:w-1/2">
           <img src={image1} alt="Standard" className="w-full h-64 object-cover rounded-xl" />
@@ -24,7 +24,7 @@ const CategoriesSection = () => {
           <p className="text-[#0B0B0B] mt-2">
           A perfect blend of timeless aesthetics and modern functionality, offering refined interiors with quality finishes.
           </p>
-          <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">Starts at</span> ₹4.35 Lakhs</p>
+          <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">2 bhk Starts at</span> ₹4.35 Lakhs</p>
         </div>
         <div className="md:w-1/2">
           <img src={image2} alt="Classic" className="w-full h-64 object-cover rounded-xl" />
@@ -36,7 +36,7 @@ const CategoriesSection = () => {
           <p className="text-[#0B0B0B] mt-2">
           Experience luxury with high-end materials, bespoke designs, and superior craftsmanship for an elegant and sophisticated home.
           </p>
-          <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">Starts at</span> ₹5.25 Lakhs</p>
+          <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">2 bhk Starts at</span> ₹5.25 Lakhs</p>
         </div>
         <div className="md:w-1/2">
           <img src={image3} alt="Premium" className="w-full h-64 object-cover rounded-xl" />

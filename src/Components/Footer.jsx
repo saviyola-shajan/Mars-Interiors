@@ -30,22 +30,22 @@ const Footer = () => {
           <h3 className="text-[#000000] text-2xl font-medium">Contact</h3>
           <ul className="space-y-3 text-lg text-[#0B0B0B]">
             <li className="flex items-center space-x-3">
-              <IoIosMail />
+              <IoIosMail className="w-6 h-6" />
               <a href="mailto:info@ipcstechnologies.com">info@marsinterios.com</a>
             </li>
             <li className="flex items-center space-x-3">
-              <FaWhatsapp />
+              <FaWhatsapp className="w-6 h-6"/>
               <a href="https://wa.me/9567876460">+91 9567876460</a>
             </li>
             <li className="flex items-center space-x-3">
-              <BiPhoneCall />
+              <BiPhoneCall className="w-6 h-6"/>
               <a href="tel:+919562978418">+91 9562978418</a>
             </li>
           </ul>
           <div className="flex space-x-5">
             {/* <a href="https://www.facebook.com/IPCSTechnologies" target="_blank" className="text-2xl"><FaFacebookSquare /></a> */}
-            <a href="https://www.instagram.com/mars_interiors_.co.in?igsh=MzRycTVjbndlNm90 " target="_blank" className="text-2xl"><FaInstagram /></a>
-            <a href="https://wa.me/9567876460" target="_blank" className="text-2xl"><FaWhatsapp /></a>
+            <a href="https://www.instagram.com/mars_interiors_.co.in?igsh=MzRycTVjbndlNm90 " target="_blank" className="text-2xl"><FaInstagram className="w-8 h-8"/></a>
+            <a href="https://wa.me/9567876460" target="_blank" className="text-2xl"><FaWhatsapp className="w-8 h-8"/></a>
           </div>
           <button className="bg-[#17A396] text-white px-6 py-2 rounded-lg">
             <a href="/contact">

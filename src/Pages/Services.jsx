@@ -34,9 +34,11 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full p-20 mb-40">
+    <div className="min-h-screen w-full p-20">
       <img src={image1} alt="service img" />
-        <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mt-10 text-center ">Services</h2>
+      <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mt-10 text-center ">
+        Services
+      </h2>
       {services.map((service, index) => (
         <div
           key={index}
@@ -75,13 +77,38 @@ const Services = () => {
             className="w-full h-[80vh] object-cover"
           />
         </div>
-        <div className="relative z-10 flex justify-end mb-40 p-10">
-          <div className="lg:w-1/2 bg-white p-6 rounded-lg shadow-lg">
-            <p className="text-lg text-gray-700">
-              Efficient project management is key to delivering successful
-              projects on time and within budget. Our team uses the latest tools
-              and methodologies to ensure your project runs smoothly.
-            </p>
+        <div className="relative z-10 flex justify-end mb-20 p-10">
+          <div className="lg:w-1/2 bg-white p-6 rounded-lg shadow-lg ">
+            <h2 className="text-2xl font-bold text-[#17A396] mb-4">
+              Project Management Services
+            </h2>
+            <ul className="list-disc pl-6 space-y-2 text-[#0B0B0BC] text-lg leading-relaxed">
+              <li>
+                <p className="font-semibold text-[#0B0B0B] text-xl">
+                  Budgeting and Cost Estimation
+                </p>{" "}
+                Establishing project budgets and estimating costs.
+              </li>
+              <li>
+                <p className="font-semibold text-[#0B0B0B] text-xl">
+                  Scheduling and Timeline Management
+                </p>{" "}
+                Coordinating project timelines and ensuring timely completion.
+              </li>
+              <li>
+                <p className="font-semibold text-[#0B0B0B] text-xl">
+                  Permitting and Code Compliance
+                </p>{" "}
+                Obtaining necessary permits and ensuring compliance with local
+                building codes.
+              </li>
+              <li>
+                <p className="font-semibold text-[#0B0B0B] text-xl">
+                  Quality Control and Assurance
+                </p>{" "}
+                Monitoring project quality and addressing any issues that arise.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
