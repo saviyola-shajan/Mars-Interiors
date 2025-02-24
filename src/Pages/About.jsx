@@ -1,4 +1,7 @@
-import image from "/images/slide2.jpg";
+import image from "/images/living-room-1.jpg";
+// import mission from "/images/living-room-1.jpg"; 
+// import vision from "/images/living-room-1.jpg";
+
 const About = () => {
   const uspData = [
     { id: 50, img: "/vectors/completed-task.png", text: "Completed Projects" },

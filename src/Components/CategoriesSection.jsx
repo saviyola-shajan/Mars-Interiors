@@ -1,4 +1,4 @@
-import image1 from "/images/slide2.jpg";
+import image1 from "/images/slide5.jpg";
 import image2 from "/images/slide3.jpg";
 import image3 from "/images/slide4.jpg";
 
@@ -15,7 +15,7 @@ const CategoriesSection = () => {
           <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">2 bhk Starts at</span> ₹3.75 Lakhs</p>
         </div>
         <div className="md:w-1/2">
-          <img src={image1} alt="Standard" className="w-full h-64 object-cover rounded-xl" />
+          <img src={image2} alt="Standard" className="w-full h-64 object-cover rounded-xl" />
         </div>
       </div>
       <div className="flex flex-col md:flex-row-reverse items-center w-full max-w-5xl bg-white shadow-lg rounded-2xl p-6">
@@ -27,7 +27,7 @@ const CategoriesSection = () => {
           <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">2 bhk Starts at</span> ₹4.35 Lakhs</p>
         </div>
         <div className="md:w-1/2">
-          <img src={image2} alt="Classic" className="w-full h-64 object-cover rounded-xl" />
+          <img src={image3} alt="Classic" className="w-full h-64 object-cover rounded-xl" />
         </div>
       </div>
       <div className="flex flex-col md:flex-row items-center w-full max-w-5xl bg-white shadow-lg rounded-2xl p-6">
@@ -39,7 +39,7 @@ const CategoriesSection = () => {
           <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">2 bhk Starts at</span> ₹5.25 Lakhs</p>
         </div>
         <div className="md:w-1/2">
-          <img src={image3} alt="Premium" className="w-full h-64 object-cover rounded-xl" />
+          <img src={image1} alt="Premium" className="w-full h-64 object-cover rounded-xl" />
         </div>
       </div>
     </div>

@@ -1,13 +1,13 @@
 const images = [
-  { src: "/images/slide 1.jpg", alt: "Image 1" },
+  { src: "/images/kitchen.jpg", alt: "Image 1" },
   { src: "/images/slide2.jpg", alt: "Image 2" },
   { src: "/images/slide3.jpg", alt: "Image 3" },
   { src: "/images/slide4.jpg", alt: "Image 4" },
   { src: "/images/slide5.jpg", alt: "Image 5" },
-  { src: "/images/slide 1.jpg", alt: "Image 6" },
-  { src: "/images/slide4.jpg", alt: "Image 4" },
-  { src: "/images/slide5.jpg", alt: "Image 5" },
-  { src: "/images/slide 1.jpg", alt: "Image 6" },
+  { src: "/images/family living 2.jpg", alt: "Image 6" },
+  { src: "/images/hall.jpg", alt: "Image 7" },
+  { src: "/images/PRAYER 1.jpg", alt: "Image 8" },
+  { src: "/images/living-room-1.jpg", alt: "Image 9" },
 ];
 
 const Gallery = () => {
