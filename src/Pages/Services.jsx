@@ -1,4 +1,4 @@
-import servicesMain from "/images/living14.jpg";
+import servicesMain from "/images/hall11.jpg";
 import image5  from "/images/hall9.jpg";
 import image2 from "/images/hall3.jpg";
 import image3 from "/images/hall4.jpg";
@@ -186,7 +186,7 @@ const Services = () => {
             </ul>
           </div>
           <div className="w-1/2 relative">
-            <div className="border-2 border-[#3A3A3A] p-4 w-96 h-96 absolute top-6 left-28 rounded-lg "></div>
+            <div className="border-2 border-[#3A3A3A] p-4 w-96 h-96 absolute top-6 left-32 rounded-lg "></div>
             <img
               src={service.image}
               alt={service.heading}

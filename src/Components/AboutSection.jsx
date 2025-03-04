@@ -8,8 +8,8 @@ const AboutSection = () => {
       </h2>
       <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-6xl">
         <div className="md:w-1/2">
-          <p className="text-2xl font-normal text-[#0B0B0B] leading-normal">
-            At <span className="font-semibold text-[#17A396] text-justify">MARS INTERIORS</span>, 
+          <p className="text-2xl leading-normal font-normal text-[#0B0B0B]">
+            At <span className="font-semibold text-[#17A396]">MARS INTERIORS</span>, 
             we are passionate about creating spaces that inspire, uplift, and reflect 
             the unique personality of each client. As a full-service interior design company, 
             we blend creativity with functionality to transform your vision into reality. 

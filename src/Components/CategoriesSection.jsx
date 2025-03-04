@@ -1,6 +1,6 @@
-import image1 from "/images/slide5.jpg";
-import image2 from "/images/slide3.jpg";
-import image3 from "/images/slide4.jpg";
+import image1 from "/images/hall10.jpg";
+import image2 from "/images/hall6.jpg";
+import image3 from "/images/living11.jpg";
 
 const CategoriesSection = () => {
   return (
