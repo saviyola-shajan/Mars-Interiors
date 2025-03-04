@@ -1,6 +1,7 @@
-import image from "/images/living-room-1.jpg";
-// import mission from "/images/living-room-1.jpg"; 
-// import vision from "/images/living-room-1.jpg";
+import Mission from "/images/hall8.jpg"
+import aboutMain from "/images/drawing4.jpg"
+import Vision from "/images/drawing2.jpg"
+
 
 const About = () => {
   const uspData = [
@@ -11,7 +12,7 @@ const About = () => {
   return (
     <div className="min-h-screen w-full p-20">
       <div>
-        <img src={image} alt="about img" />
+        <img src={aboutMain} alt="about img" />
         <div className="py-24 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto ">
             {uspData.map((usp) => (
@@ -52,7 +53,7 @@ const About = () => {
               </p>
             </div>
             <img
-              src={image}
+              src={Mission}
               alt="Mission"
               className="w-full md:w-1/2 h-80 object-cover rounded-2xl"
             />
@@ -74,7 +75,7 @@ const About = () => {
               </p>
             </div>
             <img
-              src={image}
+              src={Vision}
               alt="Vision"
               className="w-full md:w-1/2 h-80 object-cover rounded-2xl"
             />

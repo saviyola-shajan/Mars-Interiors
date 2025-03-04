@@ -1,8 +1,10 @@
-import image1 from "/images/slide 1.jpg";
-import image2 from "/images/slide2.jpg";
-import image3 from "/images/slide3.jpg";
-import image4 from "/images/slide4.jpg";
-import image5 from "/images/slide5.jpg";
+import servicesMain from "/images/living14.jpg";
+import image5  from "/images/hall9.jpg";
+import image2 from "/images/hall3.jpg";
+import image3 from "/images/hall4.jpg";
+import image4 from "/images/hall7.jpg";
+import image1 from "/images/living6.jpg";
+import projectmanage from "/images/living2.jpg";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
 const Services = () => {
   const services = [
@@ -152,7 +154,7 @@ const Services = () => {
 
   return (
     <div className="min-h-screen w-full p-20">
-      <img src={image1} alt="service img" />
+      <img src={servicesMain} alt="service img" />
       <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mt-10 text-center ">
         Services
       </h2>
@@ -199,7 +201,7 @@ const Services = () => {
       <div className="relative">
         <div className="absolute inset-0 w-full h-full z-0">
           <img
-            src={image5}
+            src={projectmanage}
             alt="Project Management"
             className="w-full h-[80vh] object-cover"
           />

@@ -5,9 +5,7 @@ const images = [
   { src: "/images/slide4.jpg", alt: "Image 4" },
   { src: "/images/slide5.jpg", alt: "Image 5" },
   { src: "/images/family living 2.jpg", alt: "Image 6" },
-  { src: "/images/hall.jpg", alt: "Image 7" },
   { src: "/images/PRAYER 1.jpg", alt: "Image 8" },
-  { src: "/images/living-room-1.jpg", alt: "Image 9" },
 ];
 
 const Gallery = () => {

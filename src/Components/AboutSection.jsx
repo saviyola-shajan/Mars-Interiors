@@ -1,4 +1,4 @@
-import image from "/images/slide 1.jpg";
+import image from "/images/drawing.jpg";
 
 const AboutSection = () => {
   return (
