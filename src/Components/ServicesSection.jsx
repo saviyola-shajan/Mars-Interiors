@@ -1,55 +1,62 @@
-import image1 from "/vectors/house.png"
-import image2 from "/vectors/furniture.png"
-import image3 from "/vectors/skyline.png"
-import image4 from "/vectors/planning-strategy.png"
-import image5 from "/vectors/roof-lamp.png"
+import image1 from "/vectors/house.png";
+import image2 from "/vectors/furniture.png";
+import image3 from "/vectors/skyline.png";
+import image4 from "/vectors/planning-strategy.png";
+import image5 from "/vectors/roof-lamp.png";
+
 const ServicesSection = () => {
   return (
-    <div className="min-h-screen px-24 pt-24">
-      <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mb-16 text-center">
+    <div className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 pt-24">
+      {/* Section Title */}
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mb-12 text-center">
         Our Services
       </h2>
 
-      <div className="grid gap-16 mx-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
-          <div className="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow h-80 w-96">
-            <img src={image1} alt="residential" className="w-20 h-20 mb-4" />
-            <h3 className="text-2xl font-semibold text-[#000000] mb-4">Residential Design</h3>  
-            <p className="text-lg text-[#0B0B0B]">
-              From modern minimalism to timeless classics, we design homes that fit your lifestyle.
-            </p>
+      {/* Services Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 place-items-center">
+        {[
+          {
+            image: image1,
+            title: "Residential Design",
+            description:
+              "From modern minimalism to timeless classics, we design homes that fit your lifestyle.",
+          },
+          {
+            image: image2,
+            title: "Custom Furniture & Decor",
+            description:
+              "Bespoke pieces that add personality and uniqueness to your space.",
+          },
+          {
+            image: image3,
+            title: "Commercial Spaces",
+            description:
+              "Sophisticated, efficient, and brand-aligned designs for offices, retail spaces, and hospitality.",
+          },
+          {
+            image: image4,
+            title: "Space Planning",
+            description:
+              "Expert layouts to maximize functionality and aesthetic appeal.",
+          },
+          {
+            image: image5,
+            title: "Lighting Design",
+            description:
+              "Perfectly balanced lighting to enhance aesthetics and mood.",
+          },
+        ].map(({ image, title, description }, index) => (
+          <div
+            key={index}
+            className="bg-white p-6 sm:p-8 shadow-lg rounded-lg hover:shadow-xl transition-shadow h-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md"
+          >
+            <img src={image} alt={title} className="w-20 h-20 mb-4" />
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#000000] mb-4">
+              {title}
+            </h3>
+            <p className="text-sm sm:text-lg text-[#0B0B0B]">{description}</p>
           </div>
-          <div className="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow h-80 w-96">
-          <img src={image2} alt="residential" className="w-20 h-20 mb-4" />
-            <h3 className="text-2xl font-semibold text-[#000000] mb-4">Custom Furniture & Decor</h3>
-            <p className="text-lg text-[#0B0B0B]">
-              Bespoke pieces that add personality and uniqueness to your space.
-            </p>
-          </div>
-          <div className="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow h-80 w-96">
-          <img src={image3} alt="residential" className="w-20 h-20 mb-4" />
-            <h3 className="text-2xl font-semibold text-[#000000] mb-4">Commercial Spaces</h3>
-            <p className="text-lg text-[#0B0B0B]">
-              Sophisticated, efficient, and brand-aligned designs for offices, retail spaces, and hospitality.
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
-          <div className="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow h-80 w-96">
-          <img src={image4} alt="residential" className="w-20 h-20 mb-4" />
-            <h3 className="text-2xl font-semibold text-[#000000] mb-4">Space Planning</h3>
-            <p className="text-lg text-[#0B0B0B]">
-              Expert layouts to maximize functionality and aesthetic appeal.
-            </p>
-          </div>
-          <div className="bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow h-80 w-96">
-          <img src={image5} alt="residential" className="w-20 h-20 mb-4" />
-            <h3 className="text-2xl font-semibold text-[#000000] mb-4">Lighting Design</h3>
-            <p className="text-lg text-[#0B0B0B]">
-              Perfectly balanced lighting to enhance aesthetics and mood.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

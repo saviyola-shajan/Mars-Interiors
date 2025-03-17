@@ -4,44 +4,67 @@ import image3 from "/images/living11.jpg";
 
 const CategoriesSection = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center gap-12 pb-10">
-        <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center py-12">Packages</h2>
-      <div className="flex flex-col md:flex-row items-center w-full max-w-5xl bg-white shadow-lg rounded-2xl p-6">
-        <div className="md:w-1/2 text-left p-6">
-          <h3 className="text-3xl font-semibold text-[#17A396]">Standard</h3>
-          <p className="text-[#0B0B0B] mt-2">
-          An affordable yet stylish solution, designed for comfort and practicality without compromising on quality.
-          </p>
-          <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">2 bhk Starts at</span> ₹3.75 Lakhs</p>
+    <div className="min-h-screen flex flex-col items-center gap-12 pb-10 px-4">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center py-6 lg:py-12">
+        Design Choices
+      </h2>
+
+      {[
+        {
+          title: "Standard",
+          description:
+            "An affordable yet stylish solution, designed for comfort and practicality without compromising on quality.",
+          price: "₹3.75 Lakhs",
+          img: image2,
+          reverse: false,
+        },
+        {
+          title: "Classic",
+          description:
+            "A perfect blend of timeless aesthetics and modern functionality, offering refined interiors with quality finishes.",
+          price: "₹4.35 Lakhs",
+          img: image3,
+          reverse: true,
+        },
+        {
+          title: "Premium",
+          description:
+            "Experience luxury with high-end materials, bespoke designs, and superior craftsmanship for an elegant and sophisticated home.",
+          price: "₹5.25 Lakhs",
+          img: image1,
+          reverse: false,
+        },
+      ].map(({ title, description, price, img, reverse }, index) => (
+        <div
+          key={index}
+          className={`flex flex-col ${
+            reverse ? "md:flex-row-reverse" : "md:flex-row"
+          } items-center w-full max-w-6xl bg-white shadow-lg rounded-2xl p-4 sm:p-6 lg:p-8`}
+        >
+          <div className="w-full md:w-1/2 text-center md:text-left pb-4 sm:p-6">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-[#17A396]">
+              {title}
+            </h3>
+            <p className="text-[#0B0B0B] mt-2 text-sm text-left sm:text-base lg:text-lg">
+              {description}
+            </p>
+            <p className="text-xl sm:text-2xl text-left font-bold text-[#C79900] mt-2">
+              <span className="text-[#0B0B0B] font-medium text-base sm:text-lg">
+                2 BHK Starts at
+              </span>{" "}
+              {price}
+            </p>
+          </div>
+
+          <div className="w-full md:w-1/2">
+            <img
+              src={img}
+              alt={title}
+              className="w-full h-52 sm:h-64 md:h-72 xl:h-80 object-cover rounded-xl"
+            />
+          </div>
         </div>
-        <div className="md:w-1/2">
-          <img src={image2} alt="Standard" className="w-full h-64 object-cover rounded-xl" />
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row-reverse items-center w-full max-w-5xl bg-white shadow-lg rounded-2xl p-6">
-        <div className="md:w-1/2 text-left p-6">
-          <h3 className="text-3xl font-semibold text-[#17A396]">Classic</h3>
-          <p className="text-[#0B0B0B] mt-2">
-          A perfect blend of timeless aesthetics and modern functionality, offering refined interiors with quality finishes.
-          </p>
-          <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">2 bhk Starts at</span> ₹4.35 Lakhs</p>
-        </div>
-        <div className="md:w-1/2">
-          <img src={image3} alt="Classic" className="w-full h-64 object-cover rounded-xl" />
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row items-center w-full max-w-5xl bg-white shadow-lg rounded-2xl p-6">
-        <div className="md:w-1/2 text-left p-6">
-          <h3 className="text-3xl font-semibold text-[#17A396]">Premium</h3>
-          <p className="text-[#0B0B0B] mt-2">
-          Experience luxury with high-end materials, bespoke designs, and superior craftsmanship for an elegant and sophisticated home.
-          </p>
-          <p className="text-2xl font-bold text-[#C79900] mt-2"><span className="text-[#0B0B0B] font-medium text-lg">2 bhk Starts at</span> ₹5.25 Lakhs</p>
-        </div>
-        <div className="md:w-1/2">
-          <img src={image1} alt="Premium" className="w-full h-64 object-cover rounded-xl" />
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

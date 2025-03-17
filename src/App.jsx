@@ -6,11 +6,13 @@ import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
+import Icons from "./Components/Icons";
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen w-full">
+        <Icons/>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

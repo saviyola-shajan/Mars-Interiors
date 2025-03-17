@@ -9,7 +9,8 @@ html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch !important;
   width: 100% !important;
-  margin: 0 !important;
+  max-width: 1580px !important;
+  margin: 0 auto !important;
   padding: 0 !important;
   font-family: 'poppins',serif;
   -webkit-font-smoothing: antialiased;

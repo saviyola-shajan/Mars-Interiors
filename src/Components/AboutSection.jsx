@@ -2,13 +2,17 @@ import image from "/images/drawing.jpg";
 
 const AboutSection = () => {
   return (
-    <div className="min-h-screen px-24 pt-24 flex flex-col items-center mt-10">
-      <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center mb-10">
+    <div className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 pt-24 flex flex-col items-center mt-10">
+      {/* Section Title */}
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center mb-8 sm:mb-10">
         About Us
       </h2>
-      <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-6xl">
-        <div className="md:w-1/2">
-          <p className="text-2xl leading-normal font-normal text-[#0B0B0B]">
+
+      {/* Content Container */}
+      <div className="flex flex-col md:flex-row items-center gap-8 sm:gap-12 w-full max-w-6xl">
+        {/* Text Section */}
+        <div className="md:w-1/2 text-left px-4 sm:px-6">
+          <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-[#0B0B0B]">
             At <span className="font-semibold text-[#17A396]">MARS INTERIORS</span>, 
             we are passionate about creating spaces that inspire, uplift, and reflect 
             the unique personality of each client. As a full-service interior design company, 
@@ -17,11 +21,13 @@ const AboutSection = () => {
             our designs are tailored to meet your needs and exceed your expectations.
           </p>
         </div>
+
+        {/* Image Section */}
         <div className="md:w-1/2">
           <img
             src={image}
             alt="About Us"
-            className="w-full h-80 object-cover rounded-2xl"
+            className="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl shadow-lg"
           />
         </div>
       </div>
