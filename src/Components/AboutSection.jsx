@@ -12,7 +12,7 @@ const AboutSection = () => {
       <div className="flex flex-col md:flex-row items-center gap-8 sm:gap-12 w-full max-w-6xl">
         {/* Text Section */}
         <div className="md:w-1/2 text-left px-4 sm:px-6">
-          <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-[#0B0B0B]">
+          <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-[#0B0B0B] text-justify">
             At <span className="font-semibold text-[#17A396]">MARS INTERIORS</span>, 
             we are passionate about creating spaces that inspire, uplift, and reflect 
             the unique personality of each client. As a full-service interior design company, 
@@ -27,7 +27,7 @@ const AboutSection = () => {
           <img
             src={image}
             alt="About Us"
-            className="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl shadow-lg"
+            className="w-full h-64 sm:h-72 md:h-80 object-cover rounded-lg shadow-lg"
           />
         </div>
       </div>

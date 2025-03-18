@@ -39,7 +39,7 @@ const CategoriesSection = () => {
           key={index}
           className={`flex flex-col ${
             reverse ? "md:flex-row-reverse" : "md:flex-row"
-          } items-center w-full max-w-6xl bg-white shadow-lg rounded-2xl p-4 sm:p-6 lg:p-8`}
+          } items-center w-full max-w-6xl bg-white shadow-lg rounded-lg p-4 sm:p-6 lg:p-8`}
         >
           <div className="w-full md:w-1/2 text-center md:text-left pb-4 sm:p-6">
             <h3 className="text-2xl sm:text-3xl font-semibold text-[#17A396]">
@@ -60,7 +60,7 @@ const CategoriesSection = () => {
             <img
               src={img}
               alt={title}
-              className="w-full h-52 sm:h-64 md:h-72 xl:h-80 object-cover rounded-xl"
+              className="w-full h-52 sm:h-64 md:h-72 xl:h-80 object-cover rounded-md"
             />
           </div>
         </div>

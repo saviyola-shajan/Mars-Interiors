@@ -32,7 +32,7 @@ const HeroSection = () => {
             />
             {slide.text && (
               <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="lg:bg-[#C79900] bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-center px-4 md:px-8">
+                <h2 className="bg-[#C79900] bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-center px-4 md:px-8 mt-96">
                   {slide.text}
                 </h2>
               </div>

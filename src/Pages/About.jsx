@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="min-h-screen w-full px-6 md:px-12 lg:px-20 xl:px-24 py-10">
       <div>
-        <img src={aboutMain} alt="about img" className="w-full rounded-lg" />
+        <img src={aboutMain} alt="about img" className="w-full mt-16 lg:mt-16" />
         
         {/* USP Section */}
         <div className="py-16">
@@ -41,7 +41,7 @@ const About = () => {
               <h2 className="text-5xl font-semibold mb-6 bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-left">
                 MISSION
               </h2>
-              <p className="text-[#0B0B0B] text-lg font-medium">
+              <p className="text-[#0B0B0B] text-lg font-medium text-justify">
                 Our mission is to create personalized, stylish, and functional
                 interiors that seamlessly blend aesthetics with practicality. We
                 strive to design spaces that not only reflect individuality but
@@ -55,22 +55,22 @@ const About = () => {
             <img
               src={Mission}
               alt="Mission"
-              className="w-full md:w-1/2 h-72 sm:h-80 object-cover rounded-2xl"
+              className="w-full md:w-1/2 h-72 sm:h-80 object-cover rounded-lg"
             />
           </div>
 
           <div className="flex flex-col md:flex-row-reverse items-center gap-10">
-            <div className="bg-white rounded-2xl w-full md:w-1/2">
+            <div className="bg-white rounded-lg w-full md:w-1/2">
               <h2 className="text-5xl font-semibold mb-6 bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-left">
                 VISION
               </h2>
-              <p className="text-[#0B0B0B] text-lg font-medium">
+              <p className="text-[#0B0B0B] text-lg font-medium text-justify">
                 Our vision is to be a leading interior design company recognized
                 for innovation, superior quality, and exceptional client
                 experiences. We aspire to set new standards in the industry by
                 transforming spaces with creativity, functionality, and
                 sustainability. Through a commitment to excellence and a deep
-                understanding of our clients' needs, our goal is to be the
+                understanding of our clients needs, our goal is to be the
                 go-to choice for those seeking extraordinary design solutions
                 that blend elegance, comfort, and practicality.
               </p>
@@ -78,7 +78,7 @@ const About = () => {
             <img
               src={Vision}
               alt="Vision"
-              className="w-full md:w-1/2 h-72 sm:h-80 object-cover rounded-2xl"
+              className="w-full md:w-1/2 h-72 sm:h-80 object-cover rounded-lg"
             />
           </div>
         </div>
@@ -90,7 +90,7 @@ const About = () => {
           </h2>
           <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-16 text-lg text-[#0B0B0B]">
             <div className="flex items-start space-x-6">
-              <span className="font-semibold text-5xl text-[#0B0B0BCC]">01</span>
+              <span className="font-semibold  text-4xl md:text-5xl text-[#0B0B0BCC]">01</span>
               <div>
                 <h3 className="font-semibold text-2xl text-[#17A396]">
                   Expert Team
@@ -103,7 +103,7 @@ const About = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <span className="font-semibold text-5xl text-[#0B0B0BCC]">02</span>
+              <span className="font-semibold text-4xl md:text-5xl text-[#0B0B0BCC]">02</span>
               <div>
                 <h3 className="font-semibold text-2xl text-[#17A396]">
                   Client-Centric Approach
@@ -116,7 +116,7 @@ const About = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <span className="font-semibold text-5xl text-[#0B0B0BCC]">03</span>
+              <span className="font-semibold text-4xl md:text-5xl text-[#0B0B0BCC]">03</span>
               <div>
                 <h3 className="font-semibold text-2xl text-[#17A396]">
                   Attention to Detail
@@ -129,7 +129,7 @@ const About = () => {
             </div>
 
             <div className="flex items-start space-x-4">
-              <span className="font-semibold text-5xl text-[#0B0B0BCC]">04</span>
+              <span className="font-semibold text-4xl md:text-5xl text-[#0B0B0BCC]">04</span>
               <div>
                 <h3 className="font-semibold text-2xl text-[#17A396]">
                   Sustainable Practices

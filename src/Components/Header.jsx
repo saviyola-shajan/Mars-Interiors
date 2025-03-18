@@ -25,17 +25,13 @@ const Header = () => {
 
   return (
     <nav className={`fixed w-full ${bgColor} z-50 transition-all duration-300 flex justify-center`}>
-      <div className="max-w-[1580px] w-full mx-auto flex items-center justify-between px-6 lg:px-10 py-4">
+      <div className="max-w-[1580px] w-full mx-auto flex items-center justify-between px-6 lg:px-10 ">
         <a href="/">
-          <img src={logo} alt="Logo" className="h-16 w-24 cursor-pointer transition-all duration-300" />
+          <img src={logo} alt="Logo" className="h-20 w-24 cursor-pointer transition-all duration-300" />
         </a>
-
-        {/* Mobile Menu Button */}
         <button className="lg:hidden h-8" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <RxCross2 /> : <GiHamburgerMenu className="w-8 h-8"  />}
         </button>
-
-        {/* Desktop Menu */}
         <ul className="hidden lg:flex space-x-10 xl:space-x-32 text-lg mr-24 font-semibold text-black">
           {["HOME", "ABOUT US", "SERVICES", "CONTACT"].map((item, index) => (
             <li key={index} className="relative">
@@ -50,8 +46,6 @@ const Header = () => {
             </li>
           ))}
         </ul>
-
-        {/* Mobile Menu */}
         <div
           className={`fixed top-0 right-0 h-full w-full bg-white shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 lg:hidden`}
         >

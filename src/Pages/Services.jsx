@@ -1,11 +1,12 @@
 import servicesMain from "/images/hall11.jpg";
-import image5  from "/images/hall9.jpg";
+import image5 from "/images/hall9.jpg";
 import image2 from "/images/hall3.jpg";
 import image3 from "/images/hall4.jpg";
 import image4 from "/images/hall7.jpg";
 import image1 from "/images/living6.jpg";
 import projectmanage from "/images/living2.jpg";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
+
 const Services = () => {
   const services = [
     {
@@ -52,7 +53,7 @@ const Services = () => {
           description: "Smart designs that maximize functionality.",
         },
         {
-          title: "Handcrafted Details ",
+          title: "Handcrafted Details",
           description: "Unique craftsmanship with intricate detailing.",
         },
         {
@@ -105,9 +106,9 @@ const Services = () => {
           description: "Making the most of every inch, whether small or large",
         },
         {
-          title: "Zoning & Functionality ",
+          title: "Zoning & Functionality",
           description:
-            "Dividing areas for specific purposes like work, relaxation, or storage..",
+            "Dividing areas for specific purposes like work, relaxation, or storage.",
         },
         {
           title: "Lighting & Ventilation",
@@ -129,17 +130,17 @@ const Services = () => {
           description: "Soft, overall lighting that sets the mood of a space",
         },
         {
-          title: "Task Lighting ",
+          title: "Task Lighting",
           description:
             "Focused lighting for specific activities like reading, cooking, or working.",
         },
         {
-          title: "Accent Lighting ",
+          title: "Accent Lighting",
           description:
             "Highlights art, architectural features, or décor elements.",
         },
         {
-          title: "mart Lighting Solutions",
+          title: "Smart Lighting Solutions",
           description:
             "Automated, energy-efficient lighting with dimmers and sensors.",
         },
@@ -153,99 +154,101 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full p-20">
-      <img src={servicesMain} alt="service img" />
-      <h2 className="text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mt-10 text-center ">
-        Services
-      </h2>
-      {services.map((service, index) => (
-        <div
-          key={index}
-          className={`flex ${
-            index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-          } items-center justify-between my-20 px-4 py-14 hover:bg-black/5 rounded-lg`}
-        >
-          <div className="w-1/2 px-8">
-            <h2 className="text-4xl font-semibold mb-8 text-[#17A396]">
-              {service.heading}
-            </h2>
-            <ul className="pl-5 text-xl font-medium">
-              {service.points.map((point, i) => (
-                <li key={i} className="mb-4 flex items-start gap-4">
-                  <RiArrowRightDoubleFill className=" w-7 h-7 text-[#17A396]" />
-                  <div>
-                    <h3 className="text-xl font-semibold text-[#0B0B0B]">
-                      {point.title}
-                    </h3>
-                    <p className="text-[#0B0B0BCC] text-lg">
-                      {point.description}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+    <div className="min-h-screen w-full px-4 sm:px-8 md:px-12 lg:px-20">
+      <div>
+        <img
+          src={servicesMain}
+          alt="service img"
+          className="w-full h-auto object-cover pt-24"
+        />
+        <h2 className="text-4xl sm:text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mt-10 text-center">
+          Services
+        </h2>
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className={`flex flex-col md:flex-row ${
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            } items-center my-20 p-0 md:p-14 hover:bg-black/5 rounded-lg`}
+          >
+            <div className="w-full md:w-1/2 px-4">
+              <h2 className="text-3xl sm:text-4xl font-semibold mb-6 text-[#17A396]">
+                {service.heading}
+              </h2>
+              <ul className="text-sm sm:text-lg font-medium">
+                {service.points.map((point, i) => (
+                  <li key={i} className="mb-4 flex items-start gap-3">  
+                    <RiArrowRightDoubleFill className="w-6 sm:w-7 h-6 sm:h-7 text-[#17A396]" />
+                    <div>
+                      <h3 className="text-lg sm:text-xl font-semibold text-[#0B0B0B]">
+                        {point.title}
+                      </h3>
+                      <p className="text-[#0B0B0BCC]">{point.description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="w-full md:w-1/2 flex justify-center relative mt-6 md:mt-0">
+              <div className="border-2 border-[#3A3A3A] p-4  md:w-96 md:h-96 absolute top-6 left-36 rounded-lg hidden md:block "></div>
+              <img
+                src={service.image}
+                alt={service.heading}
+                className="w-80 md:w-96 h-64 sm:h-80 md:h-96 rounded-lg z-10"
+              />
+            </div>
           </div>
-          <div className="w-1/2 relative">
-            <div className="border-2 border-[#3A3A3A] p-4 w-96 h-96 absolute top-6 left-32 rounded-lg "></div>
-            <img
-              src={service.image}
-              alt={service.heading}
-              className="w-96 h-96 rounded-lg relative z-10 ml-40"
-            />
+        ))}
+
+        {/* Project Management Section */}
+        <h2 className="text-3xl sm:text-4xl font-bold bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center mb-8">
+          Project Management
+        </h2>
+        <div className="relative">
+          {/* Text Overlay Above Image */}
+          <div className="absolute inset-0 flex items-center justify-center md:justify-end z-10 p-4 md:p-6 ">
+            <div className="w-full md:w-1/2 md:bg-white/20 bg-[#FFFFFF]  p-4 sm:p-6 rounded-lg shadow-lg backdrop-blur-md">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-[#17A396] mb-6">
+                Project Management Services
+              </h2>
+              <ul className="text-sm sm:text-lg">
+                {[
+                  {
+                    title: "Budgeting and Cost Estimation",
+                    desc: "Establishing project budgets and estimating costs.",
+                  },
+                  {
+                    title: "Scheduling and Timeline Management",
+                    desc: "Coordinating project timelines and ensuring timely completion.",
+                  },
+                  {
+                    title: "Permitting and Code Compliance",
+                    desc: "Obtaining necessary permits and ensuring compliance with local building codes.",
+                  },
+                  {
+                    title: "Quality Control and Assurance",
+                    desc: "Monitoring project quality and addressing any issues that arise.",
+                  },
+                ].map((item, i) => (
+                  <li key={i} className="mb-4 flex gap-2">
+                    <RiArrowRightDoubleFill className="w-6 h-6 text-[#17A396]" />
+                    <div>
+                      <p className="font-semibold text-lg sm:text-xl">
+                        {item.title}
+                      </p>
+                      <p>{item.desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-      ))}
-      <h2 className="text-4xl font-bold bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center mb-8">
-        Project Management
-      </h2>
-      <div className="relative">
-        <div className="absolute inset-0 w-full h-full z-0">
           <img
             src={projectmanage}
             alt="Project Management"
-            className="w-full h-[80vh] object-cover"
+            className="w-full h-[80vh] object-cover rounded-lg md:rounded-none "
           />
         </div>
-        <div className="relative z-10 flex justify-end mb-20 p-6">
-  <div className="lg:w-1/2 bg-white p-6 rounded-lg shadow-lg">
-    <h2 className="text-3xl font-semibold text-[#17A396] mb-8">
-      Project Management Services
-    </h2>
-    <ul className="pl-6 space-y-4 text-[#0B0B0B] text-lg leading-relaxed">
-      <li className="flex gap-2">
-        <RiArrowRightDoubleFill className="w-7 h-7 text-[#17A396] mt-1" />
-        <div>
-          <p className="font-semibold text-xl">Budgeting and Cost Estimation</p>
-          <p>Establishing project budgets and estimating costs.</p>
-        </div>
-      </li>
-
-      <li className="flex gap-2">
-        <RiArrowRightDoubleFill className="w-7 h-7 text-[#17A396] mt-1" />
-        <div>
-          <p className="font-semibold text-xl">Scheduling and Timeline Management</p>
-          <p>Coordinating project timelines and ensuring timely completion.</p>
-        </div>
-      </li>
-
-      <li className="flex gap-2">
-        <RiArrowRightDoubleFill className="w-9 h-9 text-[#17A396] mt-1" />
-        <div>
-          <p className="font-semibold text-xl">Permitting and Code Compliance</p>
-          <p>Obtaining necessary permits and ensuring compliance with local building codes.</p>
-        </div>
-      </li>
-
-      <li className="flex gap-2">
-        <RiArrowRightDoubleFill className="w-7 h-7 text-[#17A396] mt-1" />
-        <div>
-          <p className="font-semibold text-xl">Quality Control and Assurance</p>
-          <p>Monitoring project quality and addressing any issues that arise.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
       </div>
     </div>
   );
