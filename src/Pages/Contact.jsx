@@ -6,24 +6,51 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { LuAlarmClock } from "react-icons/lu";
 import { MdManageAccounts } from "react-icons/md";
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
   const formik = useFormik({
-    initialValues: {
+      initialValues: {
       name: "",
       email: "",
       phone: "",
       message: "",
+      toEmails: "marcel.mathew007@gmail.com, info@marsinterios.com", 
     },
     validationSchema: Yup.object({
-      name: Yup.string().min(3, "Name must be at least 3 characters").required("Name is required"),
-      email: Yup.string().email("Invalid email format").required("Email is required"),
-      phone: Yup.string().matches(/^[0-9]{10}$/, "Phone must be 10 digits").required("Phone number is required")
+      name: Yup.string()
+        .min(3, "Name must be at least 3 characters")
+        .required("Name is required"),
+      email: Yup.string()
+        .email("Invalid email format")
+        .required("Email is required"),
+      phone: Yup.string()
+        .matches(/^[0-9]{10}$/, "Phone must be 10 digits")
+        .required("Phone number is required")
     }),
     onSubmit: (values, { resetForm }) => {
-      console.log("Form submitted:", values);
-      alert("Message sent successfully!");
-      resetForm();
+      emailjs
+        .send(
+          "service_7zwvuml", 
+          "template_gyrt1eq", 
+          {
+            name: values.name,
+            email: values.email,
+            phone: values.phone,
+            message: values.message,
+            to_email: values.toEmails,
+          },
+          "elixKXOvv4gCQ7bPG" 
+        )
+        .then(
+          () => {
+            alert("Email sent successfully!");
+            resetForm(); 
+          },
+          () => {
+            alert("Failed to send email. Try again.");
+          }
+        );
     },
   });
 
@@ -31,7 +58,6 @@ const Contact = () => {
     <>
       <div className="container mx-auto max-w-screen-xl px-4 md:px-24 pt-32 pb-24">
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 ">
-          {/* Left Side - Contact Information */}
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl sm:text-4xl font-semibold bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mb-4 text-center md:text-left">
               Get in Touch
@@ -71,27 +97,25 @@ const Contact = () => {
               <p className="text-[#0B0B0B] ml-8 md:ml-12 text-left">Jisna Marcel</p>
             </div>
           </div>
-
-          {/* Right Side - Contact Form */}
           <div className="w-full md:w-1/2 bg-white shadow-lg rounded-lg p-8">
             <h2 className="text-2xl sm:text-3xl font-semibold bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mb-6 text-center">
               Send Us a Message
             </h2>
             <form onSubmit={formik.handleSubmit} className="space-y-4">
-              <input type="text" name="name" placeholder="Your Name*" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17A396]" {...formik.getFieldProps("name")} />
-              {formik.touched.name && formik.errors.name && <p className="text-red-500 text-sm">{formik.errors.name}</p>}
+      <input type="text" name="name" placeholder="Your Name*" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17A396]" {...formik.getFieldProps("name")} />
+      {formik.touched.name && formik.errors.name && <p className="text-red-500 text-sm">{formik.errors.name}</p>}
 
-              <input type="email" name="email" placeholder="Your Email*" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17A396]" {...formik.getFieldProps("email")} />
-              {formik.touched.email && formik.errors.email && <p className="text-red-500 text-sm">{formik.errors.email}</p>}
+      <input type="email" name="email" placeholder="Your Email*" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17A396]" {...formik.getFieldProps("email")} />
+      {formik.touched.email && formik.errors.email && <p className="text-red-500 text-sm">{formik.errors.email}</p>}
 
-              <input type="text" name="phone" placeholder="Your Phone*" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17A396]" {...formik.getFieldProps("phone")} />
-              {formik.touched.phone && formik.errors.phone && <p className="text-red-500 text-sm">{formik.errors.phone}</p>}
+      <input type="text" name="phone" placeholder="Your Phone*" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17A396]" {...formik.getFieldProps("phone")} />
+      {formik.touched.phone && formik.errors.phone && <p className="text-red-500 text-sm">{formik.errors.phone}</p>}
 
-              <textarea name="message" placeholder="Your Message" rows="4" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17A396]" {...formik.getFieldProps("message")}></textarea>
-              {formik.touched.message && formik.errors.message && <p className="text-red-500 text-sm">{formik.errors.message}</p>}
+      <textarea name="message" placeholder="Your Message" rows="4" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17A396]" {...formik.getFieldProps("message")}></textarea>
+      {formik.touched.message && formik.errors.message && <p className="text-red-500 text-sm">{formik.errors.message}</p>}
 
-              <button type="submit" className="w-full bg-[#17A396] text-white py-3 text-lg rounded-lg">Submit</button>
-            </form>
+      <button type="submit" className="w-full bg-[#17A396] text-white py-3 text-lg rounded-lg">Submit</button>
+    </form>
           </div>
         </div>
       </div>
