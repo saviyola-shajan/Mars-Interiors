@@ -27,7 +27,7 @@ const Header = () => {
     <nav className={`fixed w-full ${bgColor} z-50 transition-all duration-300 flex justify-center`}>
       <div className="max-w-[1580px] w-full mx-auto flex items-center justify-between px-6 lg:px-10 ">
         <a href="/">
-          <img src={logo} alt="Logo" className="h-20 w-24 cursor-pointer transition-all duration-300" />
+          <img src={logo} alt="Logo" className="h-20 w-24 cursor-pointer transition-all duration-300 ml-0 md:ml-16" />
         </a>
         <button className="lg:hidden h-8" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <RxCross2 /> : <GiHamburgerMenu className="w-8 h-8"  />}
