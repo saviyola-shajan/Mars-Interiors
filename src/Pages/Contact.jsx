@@ -10,6 +10,9 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
 const Contact = () => {
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
   const [formMessage, setFormMessage] = useState(""); // State for success/error message
   const [messageType, setMessageType] = useState("");
   const formik = useFormik({
@@ -34,8 +37,8 @@ const Contact = () => {
     onSubmit: (values, { resetForm }) => {
       emailjs
         .send(
-          "service_7zwvuml",
-          "template_gyrt1eq",
+          serviceId,
+          templateId,
           {
             name: values.name,
             email: values.email,
@@ -43,7 +46,7 @@ const Contact = () => {
             message: values.message,
             to_email: values.toEmails,
           },
-          "elixKXOvv4gCQ7bPG"
+          publicKey
         )
         .then(
           () => {
