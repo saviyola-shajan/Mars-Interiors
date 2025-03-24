@@ -2,7 +2,7 @@ import image from "/images/drawing.jpg";
 
 const AboutSection = () => {
   return (
-    <div className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 pt-24 flex flex-col items-center mt-10">
+    <div className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 md:pt-24 pt-12 flex flex-col items-center my-10">
       {/* Section Title */}
       <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center mb-8 sm:mb-10">
         About Us

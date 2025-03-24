@@ -76,7 +76,7 @@ const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
             <h2 className="text-3xl sm:text-4xl font-semibold bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent mb-4 text-center md:text-left">
               Get in Touch
             </h2>
-            <p className="text-[#0B0B0B] text-base sm:text-lg mb-6 text-center md:text-left">
+            <p className="text-[#0B0B0B] text-base sm:text-lg mb-6 text-center font-medium md:text-left">
               Have questions or need assistance? Reach out to us, and we&apos;ll
               be happy to help!
             </p>

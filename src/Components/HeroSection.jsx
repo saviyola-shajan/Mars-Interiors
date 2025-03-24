@@ -4,7 +4,7 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
 const Slides = [
-  { image: "/images/slide1.jpg", text: "We believe in aesthetics that work." },
+  { image: "/images/slide1.jpg", text: "/images/MARS-logo.png" },
   { image: "/images/slide2.jpg" },
   { image: "/images/slide3.jpg" },
   { image: "/images/slide4.jpg" },
@@ -13,7 +13,7 @@ const Slides = [
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center">
+    <div className="w-full h-screen flex justify-center items-center bg-opacity-30">
       <Swiper
         spaceBetween={30}
         slidesPerView={1}
@@ -21,20 +21,23 @@ const HeroSection = () => {
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         modules={[Pagination, Autoplay]}
-        className="w-full h-full"
+        className="w-full h-full "
       >
         {Slides.map((slide, index) => (
           <SwiperSlide key={index} className="relative">
             <img
               src={slide.image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-screen object-cover"
+              className={`w-full h-screen object-cover ${
+                index === 0 ? "opacity-100" : ""
+              }`}
             />
+            {index === 0 && (
+              <div className="absolute inset-0 bg-black/35"></div>
+            )}{" "}
             {slide.text && (
               <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="bg-[#C79900] bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-center px-4 md:px-8 mt-96">
-                  {slide.text}
-                </h2>
+                <img src={slide.text} className="md:w-[700px] md:h-[700px] w-96 h-96" />
               </div>
             )}
           </SwiperSlide>

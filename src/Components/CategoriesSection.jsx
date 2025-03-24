@@ -4,7 +4,7 @@ import image3 from "/images/living11.jpg";
 
 const CategoriesSection = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center gap-12 pb-10 px-4">
+    <div className="min-h-screen flex flex-col items-center md:gap-12 gap-6 pb-0 md:pb-10 px-4">
       <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent text-center py-6 lg:py-12">
         Design Choices
       </h2>

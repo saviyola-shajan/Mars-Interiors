@@ -169,7 +169,7 @@ const Services = () => {
             key={index}
             className={`flex flex-col md:flex-row ${
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
-            } items-center my-20 p-0 md:p-14 hover:bg-black/5 rounded-lg`}
+            } items-center my-16 md:my-20 p-4 md:p-14 hover:bg-black/5 rounded-lg`}
           >
             <div className="w-full md:w-1/2 px-4">
               <h2 className="text-3xl sm:text-4xl font-semibold mb-6 text-[#17A396]">
