@@ -7,10 +7,12 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Icons from "./Components/Icons";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <div className="min-h-screen w-full">
         <Icons/>
         <Header />
