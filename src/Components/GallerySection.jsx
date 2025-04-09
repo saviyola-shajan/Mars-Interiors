@@ -1,18 +1,18 @@
 const images = [
-  { src: "/images/hall1.jpg", alt: "Image 1" },
-  { src: "/images/hall2.jpg", alt: "Image 2" },
-  { src: "/images/hall5.jpg", alt: "Image 3" },
-  { src: "/images/living3.jpg", alt: "Image 4" },
-  { src: "/images/living1.jpg", alt: "Image 5" },
-  { src: "/images/living7.jpg", alt: "Image 6" },
-  { src: "/images/living8.jpg", alt: "Image 7" },
-  { src: "/images/living13.jpg", alt: "Image 8" },
-  { src: "/images/living15.jpg", alt: "Image 9" },
+  { src: "/images/image108-min.JPEG", alt: "Image 8" },
+  { src: "/images/image105-min.JPEG", alt: "Image 5" },
+  { src: "/images/image102-min.JPEG", alt: "Image 2" },
+  { src: "/images/image104-min.JPEG", alt: "Image 4" },
+  { src: "/images/image106-min.JPEG", alt: "Image 6" },
+  { src: "/images/image101-min.JPEG", alt: "Image 1" },
+  { src: "/images/image107-min.JPEG", alt: "Image 7" },
+  { src: "/images/image103-min.JPEG", alt: "Image 3" },
+  { src: "/images/image109-min.JPEG", alt: "Image 9" },
 ];
 
 const Gallery = () => {
   return (
-    <div className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 pb-20 pt-10">
+    <div className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 pb-20">
       {/* Title */}
       <div className="text-center mb-10 sm:mb-16">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium bg-gradient-to-b from-[#C79900] to-[#FFD700] bg-clip-text text-transparent">
